@@ -1,8 +1,8 @@
-# ComicCrafter AI Project Report
+# CosmicCrafter AI Project Report
 
 ## Project Overview
 
-ComicCrafter AI (also known as "Cosmic Crafter AI") is an Intel Internship project that transforms text prompts into comic book-style visual narratives. This interactive web application uses AI models to generate both the narrative structure and visual elements of a comic strip based on user inputs. Built specifically for Google Colab with GPU acceleration, this tool allows users without programming experience to create personalized comic strips through a simple graphical interface.
+CosmicCrafter AI (also known as "Cosmic Crafter AI") is an Intel Internship project that transforms text prompts into comic book-style visual narratives. This interactive web application uses AI models to generate both the narrative structure and visual elements of a comic strip based on user inputs. Built specifically for Google Colab with GPU acceleration, this tool allows users without programming experience to create personalized comic strips through a simple graphical interface.
 
 ## Technical Architecture
 
@@ -204,3 +204,8 @@ Several design decisions target performance optimization:
 ## Conclusion
 
 Cosmic Crafter AI, developed as an Intel Internship project, successfully demonstrates the application of optimized AI models for creative content generation within the constraints of cloud-based notebook environments. By carefully balancing model capabilities with performance requirements, the system provides an accessible tool for comic creation without requiring specialized hardware or technical expertise. The modular design allows for future enhancements while maintaining a focus on reliability and user experience.
+
+## Output Images are attached
+![WhatsApp Image 2025-03-22 at 21 50 22_1dd3ff97](https://github.com/user-attachments/assets/ca4a1439-6612-457e-af48-8c3eebacd658)
+![WhatsApp Image 2025-03-22 at 21 50 22_c8e3700c](https://github.com/user-attachments/assets/d2b95e0d-2413-4eba-b8ed-8ff53c5f091b)
+![WhatsApp Image 2025-03-22 at 21 50 22_a86452ec](https://github.com/user-attachments/assets/e3184a14-f381-4ab6-afbc-72235e039ef0)
