@@ -6,17 +6,17 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 ✅ **Multi-Style Visual Generation** (Comic, Manga, Pixel Art)  
 ✅ **Google Colab Optimized** (Runs on T4 GPU)  
 
-**Key Upgrade**: Now uses **SDXL 1.0 + FLAN-T5** for higher quality outputs  
+**Key Upgrade**: Now uses **Stable Diffusion XL + Mistral-7B-Instruct** for higher quality outputs  
 
 ---
 
 ## **2. Technical Highlights**  
 
 ### **Core Models**  
-| Component | Primary Model | Fallback |  
-|-----------|--------------|----------|  
-| Text Generation | FLAN-T5 (220M params) | DistilGPT-2 |  
-| Image Generation | SDXL 1.0 (3.5B params) | SD 1.4 |  
+| Component | Primary Model | Fallback 1 | Fallback 2 |
+|-----------|--------------|------------|------------|
+| Story Generation | Mistral-7B-Instruct | T5 Model | DistilGPT-2 |
+| Image Generation | Stable Diffusion XL | SD 1.4 | - |
 
 ### **Performance**  
 - **Speed**: 18 sec/panel (T4 GPU)  
@@ -30,7 +30,7 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 ### **Step-by-Step Workflow**  
 1. **Story Generation**  
    ```python
-   # Uses FLAN-T5 to create 4-act structure
+   # Uses Mistral-7B-Instruct to create 4-act structure
    story = generate_story(prompt) 
    ```
    *Output Example*:  
@@ -47,7 +47,7 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 
 2. **Image Generation**  
    ```python
-   # SDXL with optimizations
+   # Stable Diffusion XL with optimizations
    image = pipe(
        prompt=scene_description,
        num_inference_steps=30,
@@ -55,23 +55,48 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
    ).images[0]
    ```
 
-3. **Comic Assembly  
+3. **Comic Assembly**  
    ```python
    comic = create_comic_layout(panels)  # 2x2 grid
    ```
 
 ---
 
-## **4. Key Upgrades**  
+## **4. System Components**  
+
+### **A. Story Generation System**
+Three-tier model hierarchy:
+- **Primary**: Mistral-7B-Instruct for high-quality story generation
+- **Fallback 1**: T5 Model for intermediate backup
+- **Fallback 2**: DistilGPT2 as final fallback
+
+### **B. Image Generation System**
+Two-tier model hierarchy:
+- **Primary**: Stable Diffusion XL for high-quality image generation
+- **Fallback**: Stable Diffusion v1.4 as backup
+
+### **C. Comic Panel Assembly System**
+Components:
+- Panel Layout Manager
+- Text Integration System
+- Speech Bubble Generator
+- Final Comic Renderer
+
+### **D. Error Handling & Logging System**
+For managing model transitions and failures
+
+---
+
+## **5. Key Upgrades**  
 
 ### **A. Better Text Generation**  
-**FLAN-T5 Advantages**:  
+**Mistral-7B-Instruct Advantages**:  
 - Understands story structure better  
 - Generates richer scene descriptions  
-- 40% faster than old GPT-2 approach  
+- 60% faster than old approach  
 
 ### **B. Improved Image Quality**  
-**SDXL 1.0 Features**:  
+**Stable Diffusion XL Features**:  
 | Metric | Old (SD 1.4) | New (SDXL) |  
 |--------|-------------|------------|  
 | Detail | Good | Excellent |  
@@ -80,7 +105,7 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 
 ---
 
-## **5. User Guide**  
+## **6. User Guide**  
 
 ### **Quick Start**  
 1. Open in Google Colab  
@@ -96,7 +121,7 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 
 ---
 
-## **6. Sample Outputs**  
+## **7. Sample Outputs**  
 ![WhatsApp Image 2025-03-29 at 09 50 12_67d2245c](https://github.com/user-attachments/assets/d8d35d71-e41d-40bd-9944-0638ef51b3ff)
 ![WhatsApp Image 2025-03-29 at 09 50 36_b4ce6c9f](https://github.com/user-attachments/assets/b39b83c9-a1b0-4260-acb0-41c83818a75f)
 ![WhatsApp Image 2025-03-29 at 09 50 39_f7e05249](https://github.com/user-attachments/assets/11e2cf1a-c16f-4881-89b3-d48fa1629ad2)
@@ -108,7 +133,7 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 ![WhatsApp Image 2025-03-29 at 09 51 13_6f915663](https://github.com/user-attachments/assets/bb90bd54-e36e-42ac-805b-7a59d68668ce)
 
 
-## **7. What's Next?**  
+## **8. What's Next?**  
 **Roadmap**:  
 - Q3 2024: Character consistency across panels  
 - Q4 2024: Animated comic export  
@@ -116,10 +141,10 @@ CosmicCrafter AI transforms text prompts into professional comic strips using:
 
 ---
 
-## **8. Conclusion**  
+## **9. Conclusion**  
 CosmicCrafter AI now delivers:  
-✨ **Higher quality images** with SDXL  
-✍️ **Better storytelling** via FLAN-T5  
+✨ **Higher quality images** with Stable Diffusion XL  
+✍️ **Better storytelling** via Mistral-7B-Instruct  
 ⚡ **Same fast performance** in Colab  
 
 Perfect for educators, artists, and comic enthusiasts!
@@ -133,5 +158,7 @@ Perfect for educators, artists, and comic enthusiasts!
 ```
 
 **Model Links**:  
-- [SDXL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)  
-- [FLAN-T5](https://huggingface.co/google/flan-t5-base)  
+- [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)  
+- [Mistral-7B-Instruct](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1)  
+- [T5 Model](https://huggingface.co/google/t5-base)
+- [DistilGPT2](https://huggingface.co/distilbert/distilgpt2)
