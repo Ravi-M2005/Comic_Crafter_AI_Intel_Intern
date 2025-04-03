@@ -1,3 +1,6 @@
+# Detailed Project Report and Output Video Link Attached in main repo.
+# Output Video Link : https://drive.google.com/file/d/17qHzOcmvXsGEoqAvOWiSSfvzOZXPScFW/view?usp=drivesdk 
+
 # ComicCrafter AI Project Report
 
 ## 1\. Problem Statement
