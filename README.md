@@ -1,11 +1,14 @@
-# ComicCrafter AI Project Report
+# Project Files Information
+The actual project was done in Google Colab as a `.ipynb` file, but:  
 
-**The actual project was done in Google Colab as a .ipynb file, but we have attached it as a .py file (intel_internship_project_final.py) to avoid unwanted issues.**
+1. **We have attached it as a `.py` file** (`intel_internship_project_final.py`) **to avoid unwanted issues.**  
+2. **We have also attached** `Intel_Internship_Project_Final.ipynb` **and its Colab output as a PDF file** (`Colab.pdf`).
 
 **Detailed Project Report and Output Video Link Attached in main repo.** 
 
 **Output Video Link:** [Click here](https://drive.google.com/file/d/17qHzOcmvXsGEoqAvOWiSSfvzOZXPScFW/view?usp=drivesdk)
 
+# ComicCrafter AI Project Report
 
 ## 1\. Problem Statement
 
