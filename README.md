@@ -1,5 +1,7 @@
 # ComicCrafter AI Project Report
 
+**The Actual project was done in Google Colab as .pynb file But here we attached as .py file as intel_internship_project_final.py to avoid unwanted issues.**
+
 **Detailed Project Report and Output Video Link Attached in main repo.**  
 **Output Video Link:** [Click here](https://drive.google.com/file/d/17qHzOcmvXsGEoqAvOWiSSfvzOZXPScFW/view?usp=drivesdk)
 
